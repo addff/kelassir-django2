@@ -1,0 +1,15 @@
+#version: '3.9'
+
+services:
+  django2-web:
+    build:
+      context: .
+    container_name: kelassir_django2_web
+    command: python django2/manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "48000:8000"
+    environment:
+      - PYTHONDONTWRITEBYTECODE=1
+      - PYTHONUNBUFFERED=1
