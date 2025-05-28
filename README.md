@@ -1,1 +1,1 @@
-# kelassir_django2
+# kelassir-django2
